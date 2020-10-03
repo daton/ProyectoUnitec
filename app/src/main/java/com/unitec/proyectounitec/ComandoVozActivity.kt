@@ -18,7 +18,9 @@ class ComandoVozActivity : AppCompatActivity() {
         setContentView(R.layout.activity_comando_voz)
         setSupportActionBar(findViewById(R.id.toolbar))
 
-          fab.setOnClickListener { view ->
+        var x:Int
+
+        fab.setOnClickListener { view ->
             Snackbar.make(view, "El boton hace que vibre el cel por 3 segundos", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
             //POnemos a vibra el cel por 3 segundos
